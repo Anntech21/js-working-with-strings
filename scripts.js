@@ -50,13 +50,11 @@ let email4 = "gracehopper@academy.COM";
 let email5 = "roslinaccounting  @gmail.com";
 
 // Modify the strings here
-email1 = email1.toLowerCase();
-email2 = email2.toLowerCase();
-email2 = email3.toLowerCase();
-email2 = email4.toLowerCase();
-email2 = email5.trim(16).toLowerCase();
-
-console.log(email1,email2,email3,email4,email5);
+let correctEmail1 = (email1.toLowerCase());
+let correctEmail2 = (email2.toLowerCase());
+let correctEmail3 = (email3.toLowerCase());
+let correctEmail4 = (email4.toLowerCase());
+let correctEmail5 = (email5.trim().charCodeAttoLowerCase());
 
 /**************************** Exercise 4 - Formatting Passwords  ****************************/
 // For the following password, check to see if contains more than 12 characters. Display an alert that says, "Password is [NUMBER] characters long."
