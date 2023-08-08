@@ -60,6 +60,7 @@ let correctEmail5 = (email5.trim().charCodeAttoLowerCase());
 // For the following password, check to see if contains more than 12 characters. Display an alert that says, "Password is [NUMBER] characters long."
 let password = "mypass";
 
+console.log(password.length);
 // What is the following code doing?
 // Resource here: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions"]
 let specialChars = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
@@ -73,8 +74,17 @@ console.log(specialChars.test(string));
 /**************************** Exercise 5 - Concatenation  ****************************/
 
 // Declare two variables and concatenate them to form a new string. Print the result to the console.
-
+let status ="almost";
+let exercise = "js-working-with-strings";
+let assignment = state + "/" + exercise;
+console.log (assignment);
 // Declare two variables and use string interpolation to join them to form a new string. Print the result to the console.
-
+console.log(anchal is ${status} done with ${exercise}!);
 /**************************** Exercise 6 - Research  ****************************/
 // Add your methods and examples of each method here.
+const worldString = "Hello, world";
+
+console.log(worldString.blink()); // <blink>Hello, world</blink>
+console.log(worldString.bold()); // <b>Hello, world</b>
+console.log(worldString.italics()); // <i>Hello, world</i>
+console.log(worldString.strike()); // <strike>Hello, world</strike>
