@@ -13,12 +13,35 @@ let userName10 = "Dr. Violet Smith";
 
 // Modify the strings here
 
-let firstName1 = userName1.slice(0, 4);
-let lastName1 = userName1.slice(7);
+let firstName1 = (userName1.slice(0, 4));
+let lastName1 = (userName1.slice(7, 12));
 
-let firstName2 = userName2.slice(0, 5);
-let lastName2 = userName2.slice(7);
-firstName2 = userName2[0].toUpperCase();
+let firstName2 = (userName2[0].toUpperCase() + userName2.slice(1,6));
+let lastName2 = (userName2[7] + userName2.slice[8].toLowerCase());
+
+let firstName3 = (userName3.slice(5, 10));
+let lastName3 = (userName3[11].toUpperCase() + userName3.slice(12));
+
+let firstName4 = (userName4.slice(4,9));
+let lastName4 = (userName4.slice(10));
+
+let firstName5 = (userName5[0].toUpperCase() +userName5.slice(1,5));
+let lastName5 = (userName5[6].toUpperCase() + userName5.slice(7));
+
+let firstName6 = (userName6[0] + userName6.slice(1,7).tolowerCase());
+let lastName6 = (userName6.slice(8));
+
+let firstName7 = (userName7.slice(0, 7));
+let lastName7 = (userName7.slice(8, 12));
+
+let firstName8 = (userName8.trim().slice(0,7));
+let lastName8 = (userName8.slice(8));
+
+let firstName9 = (userName9.slice(0, 6));
+let lastName9 = (userName9.slice(18));
+
+let firstName10 = (userName10.slice(4, 10));
+let lastName10 = (userName10.slice(10));
 
 /**************************** Exercise 2  - Formatting Dates ****************************/
 
@@ -35,12 +58,15 @@ console.log(futureDateFormatted);
 futureDate = "10-31-2025";
 console.log(futureDate);
 
+let formattedDate = todaysDate.slice(0, 2) + "/" + todaysDate.slice(3, 5) + "/" +todaysDate.slice(6, 10);
+
 // Run the following code in the browser.
 let futureDate = "2025-10-31";
 let futureDateFormatted = new Date(futureDate);
 console.log(futureDateFormatted);
 
 //Manipulate the above string to display it in the MM/DD/YEAR format.
+
 
 /**************************** Exercise 3 - Formatting Emails ****************************/
 let email1 = "INFO@airbnb.com";
@@ -54,32 +80,39 @@ let correctEmail1 = (email1.toLowerCase());
 let correctEmail2 = (email2.toLowerCase());
 let correctEmail3 = (email3.toLowerCase());
 let correctEmail4 = (email4.toLowerCase());
-let correctEmail5 = (email5.trim().charCodeAttoLowerCase());
+let correctEmail5 = (email5.trim().slice(0,16) + email5.slice(18));
 
 /**************************** Exercise 4 - Formatting Passwords  ****************************/
 // For the following password, check to see if contains more than 12 characters. Display an alert that says, "Password is [NUMBER] characters long."
 let password = "mypass";
-
 console.log(password.length);
+
 // What is the following code doing?
 // Resource here: ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions"]
 let specialChars = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 let string = "Hello World!";
 console.log(specialChars.test(string));
+Its checking for special characters in string
 
 // How would you run the above test on the password given above?
+console.log(specialChars.test(password));
 
-// How would you check to see if a string contains numbers?
+// How would you check to see if a string contains numbers? 
+//(https://stackoverflow.com/questions/12090077/javascript-regular-expression-password-validation-having-special-characters)
+
+console.log(/\d.test(password));
 
 /**************************** Exercise 5 - Concatenation  ****************************/
 
 // Declare two variables and concatenate them to form a new string. Print the result to the console.
-let status ="almost";
+let statuss = "almost";
 let exercise = "js-working-with-strings";
-let assignment = state + "/" + exercise;
+let assignment = statuss + "/" + exercise;
 console.log (assignment);
+
 // Declare two variables and use string interpolation to join them to form a new string. Print the result to the console.
-console.log(anchal is ${status} done with ${exercise}!);
+console.log(`anchal is ${statuss} done with ${exercise}!`);
+
 /**************************** Exercise 6 - Research  ****************************/
 // Add your methods and examples of each method here.
 const worldString = "Hello, world";
