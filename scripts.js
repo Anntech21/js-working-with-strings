@@ -53,13 +53,17 @@ console.log(todaysDate);
 let dateOnly = new Date().toISOString().split('T')[0];
 console.log(dateOnly);
 
+let futureDate = ('2025-10-31');
+let futureDateFormatted = new Date(futureDate).toLocaleString();
+console.log(futureDateFormatted, "4");
+
 // // Change the string to be MM/DD/YYYY.
 let dateType = new Date ('08-15-2023');
 console.log(dateType)
 
 // Run the following code in the browser.
-let futureDate = ('2025-10-31');
-let futureDateFormatted = new Date(futureDate);
+futureDate = ('2025-10-31');
+futureDateFormatted = new Date(futureDate);
 console.log(futureDateFormatted);
 
 //Manipulate the above string to display it in the MM/DD/YEAR format.
